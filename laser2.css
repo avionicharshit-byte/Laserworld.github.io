@@ -1,0 +1,70 @@
+#bgvid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+ 
+ 
+ 
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 900px) {
+  video{
+    width: 100%;
+    display: block;
+  }
+}
+  .viewport-header {
+    position: relative;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    color: crimson;
+    
+  }
+  h2{
+    position: relative;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(255, 60, 0);
+  }
+  h1{
+        
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #000000;
+  
+    position: relative;
+   text-align: center;
+    font-size: 45px;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #fc0707, rgb(251, 255, 0), #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }

@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background: #efefef url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/106403/last-jedi--bg.jpg) top center no-repeat;
+  background-size: auto 100%;
+}
+
+
+body {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.bottom h1{
+        
+  color: rgb(0, 0, 0);
+  
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 4s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}      
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(251, 255, 2), 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(173, 4, 252), 0 0 30px #c3f709, 0 0 40px #ff4da6, 0 0 50px #6959fc, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.two b{
+    color: rgb(0, 0, 0);
+}
+   /*bitimage*/
+   .bitimage{
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    /*limiations*/
+  p+h4{
+      text-align: center;
+      color: black;
+    }
+    h4{
+      text-align: center;
+      color: chartreuse;
+    }
+    h2{
+      text-align: center;
+    }
+
+.bottom {
+  text-align: center;
+  font-family: New Tegomin,Arial, Helvetica, sans-serif;
+  height:17%;
+  font-size: 80%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: greenyellow;
+  background-color: rgb(0, 0, 0);
+  padding: 0px 0 ;
+}
+
+#battle-of-crait {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  
+  @media (min-width: 250vh) {
+     transform: translateY(4vw)
+  }
+}
+
+#down{
+  align-items:left;
+}
+#heros {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-51%);
+  height: 100%;
+  width: auto;
+  opacity: 1
+}
+
+#lightside {
+  animation: 8s lightside infinite;
+}
+
+@keyframes lightside {
+  0% { opacity: .3 }
+  10% { opacity: .6 }
+  20% { opacity: .4 }
+  30% { opacity: 1 }
+  40% { opacity: .3 }
+  50% { opacity: .6 }
+  60% { opacity: .4 }
+  70% { opacity: .6 }
+  80% { opacity: 1 }
+  90% { opacity: .1 }
+  100% { opacity: .4 }
+}
+
+#darkside {
+  animation: 1s darkside infinite;
+}
+
+@keyframes darkside {
+  0% { opacity: .3 }
+  5% { opacity: .6 }
+  15% { opacity: .4 }
+  20% { opacity: .8 }
+  25% { opacity: .3 }
+  30% { opacity: 1 }
+  35% { opacity: .4 }
+  40% { opacity: .6 }
+  45% { opacity: 1 }
+  50% { opacity: .2 }
+  55% { opacity: .3 }
+  60% { opacity: .6 }
+  65% { opacity: .4 }
+  70% { opacity: .2 }
+  80% { opacity: .6 }
+  85% { opacity: .8 }
+  90% { opacity: .4 }
+  95% { opacity: .6 }
+  100% { opacity: .4 }
+}
